@@ -1,0 +1,328 @@
+/* -------- General CSS Start -------- */
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #090f1a;
+    background: #fff;
+    overflow-x: hidden;
+}
+/* Images */
+img {
+    max-width: 100%;
+}
+cite {
+    font-size: 16px;
+}
+/* -------- General CSS End -------- */
+
+/* -------- Navbar Section Start -------- */
+/* Navbar */
+.navbar {
+    position: relative;
+}
+.navbar ul li {
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.navbar ul li a {
+    position: relative;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.6px;
+    color: #fff;
+}
+.navbar-collapse {
+    text-align: center;
+}
+.navbar-dark .navbar-toggler:focus {
+    color: #fff;
+    box-shadow: 0 0 0 2px;
+}
+/* Links */
+a {
+    text-decoration: none !important;
+    color: #999;
+    transition: all 0.5s ease-in-out;
+}
+.navbar ul li a:hover {
+    color: #61ccb5;
+}
+ul {
+    list-style: none;
+}
+/* -------- Navbar Section End -------- */
+
+/* -------- Homepage Section Start -------- */
+.home-section {
+    position: relative;
+}
+.home-section .home-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+}
+.home-section .auto-type {
+    color: #61ccb5;
+    font-weight: 600;
+}
+.home-section .home-btn {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a5a7a7;
+}
+/* -------- Homepage Section End -------- */
+
+/* -------- Journey Section Start -------- */
+.journey-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.journey-section .journey-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+}
+.journey-section .journey-desc {
+    position: relative;
+    text-indent: 1cm;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* -------- Journey Section End -------- */
+
+/* -------- Project Section Start -------- */
+.project-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.project-section .project-title {
+    position: relative;
+    padding-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+}
+.project-section .project-lang {
+    position: relative;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #61ccb5;
+}
+.project-section .project-desc {
+    position: relative;
+    font-size: 21px;
+    font-weight: 500;
+}
+/* Video */
+.project-section .vid {
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: #61ccb5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.project-section .vid-container {
+    margin-top: 50px;
+    text-align: center;
+}
+/* Boxicons */
+.project-section .bx {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .4;
+    color: #a5a7a7;
+}
+.project-section .bx:hover {
+    color: #61ccb5;
+}
+/* overwrite font-color */
+.project-section .proj-n {
+    color: #61ccb5;
+}
+/* -------- Project Section End -------- */
+
+/* -------- Certificate Section Start -------- */
+.cert-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.cert-section .page-title {
+    position: relative;
+    padding-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+}
+.cert-section .cs50 {
+    padding-bottom: 1.5rem;
+}
+.cert-section .card {
+    position: relative;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.cert-section .cert-img {
+    position: relative;
+    height: 100%;
+}
+.cert-section .cert-name {
+    position: relative;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #090f1a;
+}
+.cert-section .cert-btn {
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a5a7a7;
+}
+.cert-section .cert-btn:hover {
+    color: #61ccb5;
+    transition: 0.3s;
+}
+.cert-section .card-btn {
+    position: relative;
+    text-align: center;
+}
+.cert-section .card-title {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000;
+}
+/* -------- Certificate Section End -------- */
+
+/* -------- Contact Section Start -------- */
+.contact-section {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-section .contact-title {
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #090f1a;
+}
+.contact-section .contact_btn {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: .4;
+    color: #61ccb5;
+}
+.contact_btn:hover .contact__button-icon {
+    transform: translateX(.25rem);
+}
+.contact__button-icon {
+    font-size: 1rem;
+    transition: .4;
+}
+.contact-section p {
+    position: relative;
+    font-size: 16;
+    font-weight: 400;
+    color: #090f1a;
+}
+/* center container */
+.contact-container {
+    text-align: center;
+}
+/* -------- Contact Section End -------- */
+
+/* -------- Footer Section Start -------- */
+.footer {
+    position: sticky;
+    top: 100%;
+    padding-top: 30px;
+    background: #61ccb5;
+}
+.footer .social-media .footer-list {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+.footer .social-media .footer-list li {
+    float: left;
+    margin-right: 10px;
+}
+.footer .social-media .footer-list a {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #090f1a;
+}
+.footer p {
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-list .bx:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+/* -------- Footer Section End -------- */

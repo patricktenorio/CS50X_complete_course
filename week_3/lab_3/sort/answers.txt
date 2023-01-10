@@ -1,0 +1,53 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Based on the results below, it clearly shows that the sort1 is the slowest to sort random & reverse data.
+
+sort2 uses: Merge Sort
+
+How do you know?: Based on the results below, sort2 is significantly faster on both sort2 and sort3.
+
+sort3 uses: Selection Sort
+
+How do you know?: Based on the results below, sort3 is the slowest in sorting sorted data.
+
+/* -------------------------- RESULTS --------------------------- */
+
+random5000 [real: .084s][user: .063s][sys: .017s] - SORT1 (3rd) *Bubble Sort (slowest)
+random5000 [real: .048s][user: .007s][sys: .016s] - SORT2 (1st) *Merge Sort (fastest to sort)
+random5000 [real: .054s][user: .0.37s][sys: .011s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+random10000 [real: .303s][user: .246s][sys: .036s] - SORT1 (3rd) *Bubble Sort (slowest)
+random10000 [real: .088s][user: .010s][sys: .039s] - SORT2 (1st) *Merge Sort (fastest to sort)
+random10000 [real: .172s][user: .110s][sys: .038s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+random50000 [real: 7.590s][user: 6.995s][sys: .203s] - SORT1 (3rd) *Bubble Sort (slowest)
+random50000 [real: .492s][user: .049s][sys: .181s] - SORT2 (1st) *Merge Sort (fastest to sort)
+random50000 [real: 3.130s][user: 2.630s][sys: .205s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+reversed5000 [real: .077s][user: .054s][sys: .021s] - SORT1 (3rd) *Bubble Sort (slowest)
+reversed5000 [real: .003s][user: .001s][sys: .001s] - SORT2 (1st) *Merge Sort (fastest to sort)
+reversed5000 [real: .075s][user: .028s][sys: .023s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+reversed10000 [real: .273s][user: .208s][sys: .032s] - SORT1 (3rd) *Bubble Sort (slowest)
+reversed10000 [real: .002s][user: .001s][sys: .001s] - SORT2 (1st) *Merge Sort (fastest to sort)
+reversed10000 [real: .190s][user: .122s][sys: .031s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+reversed50000 [real: 5.890s][user: 5.143s][sys: 0.239s] - SORT1 (3rd) *Bubble Sort (slowest)
+reversed50000 [real: .004s][user: .002s][sys: .000s] - SORT2 (1st) *Merge Sort (fastest to sort)
+reversed50000 [real: 3.106s][user: 2.637s][sys: .207s] - SORT3 (2nd) *Selection Sort (slowest time based on sorted files)
+
+sorted5000 [real: .046s][user: .006s][sys: .019s] - SORT1 (1st) *Bubble Sort (faster in sorted file)
+sorted5000 [real: .051s][user: .012s][sys: .011s] - SORT2 (2nd) *Merge Sort
+sorted5000 [real: .081s][user: .027s][sys: .018s] - SORT3 (3rd) *Selection Sort (slowest in sorted file)
+
+sorted10000 [real: .071s][user: 0.10s][sys: 0.41s] - SORT1 (1st) *Bubble Sort (faster in sorted file)
+sorted10000 [real: .086s][user: .024s][sys: .018s] - SORT2 (2nd) *Merge Sort
+sorted10000 [real: .173s][user: .103s][sys: .050s] - SORT3 (3rd) *Selection Sort (slowest in sorted file
+
+sorted50000 [real: .496s][user: .045s][sys: .173s] - SORT1 (1st) *Bubble Sort (faster in sorted file)
+sorted50000 [real: .610s][user: .055s][sys: .185s] - SORT2 (2nd) *Merge Sort
+sorted50000 [real: 3.503s][user: 2.738s][sys: .216s] - SORT3 (3rd) *Selection Sort (slowest in sorted file)
+
+
+
+

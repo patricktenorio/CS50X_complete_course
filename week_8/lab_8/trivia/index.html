@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // Change button color if == to right or wrong
+            document.addEventListener('DOMContentLoaded', function() {
+                let right_ans = document.querySelector('#right');
+                let wrong_ans = document.querySelectorAll('#wrong');
+
+                // Call get answer function
+                let buttons = document.querySelectorAll(".button");
+                buttons.forEach(function (button) {
+                    button.addEventListener("click", get_ans);
+
+                // Change Color
+                right_ans.addEventListener('click', function() {
+                    right_ans.style.backgroundColor = '#00FF00';
+                })
+                for (let x = 0; x < wrong_ans.length; x++) {
+                    wrong_ans[x].addEventListener('click', function() {
+                        wrong_ans[x].style.backgroundColor = '#FF0000';
+                    })
+                }
+            });
+
+            // Display text if answer is correct or incorrect
+            function check_ans(right, e) {
+                if (right) {
+                    document.getElementById(e).innerHTML = "Your answer is correct!"
+                } else {
+                    document.getElementById(e).innerHTML = "Your answer is incorrect. Try again."
+                }
+            }
+
+            // Reset all buttons function
+            function reset_btn() {
+                let choices = document.querySelectorAll(".button");
+                choices.forEach(function (btn) {
+                    btn.classList.remove('wrong');
+                    btn.classList.remove('right');
+                })
+            }
+
+            // Get answers function
+            function get_ans() {
+                reset_btn()
+                if (event.target.id == "right") {
+                    event.target.classList.add('right');
+                    check_ans(true, "return_answer");
+                } else {
+                    event.target.classList.add('wrong');
+                    check_ans(false, "return_answer");
+                }
+            }
+
+            // Free response submission textfield
+            document.querySelector("#check_ans").addEventListener("click", function() {
+                    let input = document.querySelector("input");
+                    if (input.value.toUpperCase() == "CS50") {
+                        input.style.backgroundColor = "#00FF00";
+                        document.querySelector("#return_answer2").innerHTML = "Correct!";
+                    } else {
+                        input.style.backgroundColor = "#FF0000";
+                        document.querySelector("#return_answer2").innerHTML = "Incorrect!";
+                    }
+                })
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Question 1: Which of the following ingredients is not normally used to brew beer?</h3>
+                <button class="button" id="wrong" name="q1_ans" value="Hops">Hops</button>
+                <button class="button" id="wrong" name="q1_ans" value="Yeast">Yeast</button>
+                <button class="button" id="wrong" name="q1_ans" value="Malt">Malt</button>
+                <button class="button" id="right" name="q1_ans" value="Vinegar">Vinegar</button>
+                <h4 id="return_answer"></h4>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>What is the best free online Computer Science course?</h3>
+                <input type="text" name="part2_answer" placeholder="Type your answer here...">
+                <button id="check_ans">Check Answer</button>
+                <h4 id="return_answer2"></h4>
+
+            </div>
+        </div>
+    </body>
+</html>

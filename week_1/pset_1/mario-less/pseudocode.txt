@@ -1,0 +1,5 @@
+Ask for height between 1 to 8
+Check if the height is between 1 to 8
+If height is not between 1 to 8 or not a number, repeat step 1
+Else If height is between 1 to 8, iterate from 1 through height
+On iteration, print hashes and then a newline
